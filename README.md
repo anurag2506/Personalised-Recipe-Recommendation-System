@@ -9,7 +9,6 @@
 <br></p>
 
 <h3> Outlook and Workflow of the System</h3><br>
-
 <p> <h4>The pipeline for providing the recommendations can be divided into 3 parts:</h4> 
   <br> 1. Creating a graph for a representative group of recipes
   <br> 2. Getting the user inputs for the above mentioned 4 details and querying the graph for similar nodes</p>
