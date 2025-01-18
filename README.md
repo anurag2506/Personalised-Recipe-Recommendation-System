@@ -7,7 +7,8 @@
 <br> <b>3. Ingredients Available (Vegatables, spices, fruits and other things)</b>
 <br> <b>4. Time available for cooking</b>
 <br></p>
-<h3> Outlook and Workflow of the System</h3><br>
+
+<h3> Outlook and Workflow of the System</h3>
 <p> <h4>The pipeline for providing the recommendations can be divided into 3 parts:</h4> 
    1. Creating a graph for a representative group of recipes
    2. Getting the user inputs for the above mentioned 4 details and querying the graph for similar nodes
