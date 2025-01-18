@@ -1,6 +1,6 @@
 <h2> Personalised Recipe Recommendation System</h2>
 
-<h3> Basic Overview of the Project</h4><br>
+<h3> Basic Overview of the Project</h4>
 <p> The project aims at providing users with recipe recommendations tailored to their needs and conditions. Throughout the world, people have different food habits and to cater to each one is the aim of this system. To make these recipes as personalised as possible, we take a couple of inputs from the users regarding the following:<br>
 <br> <b>1. Dietary Preferences( Veg, Non-Veg, Vegan)</b>
 <br> <b>2. Type of Cuisine (Italian, Indian, Chinese etc.)</b>
@@ -14,6 +14,4 @@
    2. Getting the user inputs for the above mentioned 4 details and querying the graph for similar nodes
    3. Pass the details of the similar nodes into an LLM for a more professional and user-friendly response for the user along with all the steps needed to prepare the dish </p>
 
-
-
-
+<h3> Steps required to run the Streamlit Interface</h3>
