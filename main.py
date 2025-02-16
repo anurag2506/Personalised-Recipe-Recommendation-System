@@ -5,6 +5,7 @@ from recipe_graph import RecipeRecommendationSystem, recommend_recipes
 
 co = cohere.ClientV2("Q8mY5CRKzgiNqzIMjeT1Ed24tSukj0bFcn8lbtp7")
 
+
 if "cohere_model" not in st.session_state:
     st.session_state["cohere_model"] = "command-r-plus-08-2024"
 
