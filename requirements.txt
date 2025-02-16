@@ -2,4 +2,3 @@ streamlit
 cohere
 pandas
 networkx
-dotenv
