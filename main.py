@@ -13,6 +13,13 @@ if "messages" not in st.session_state:
     st.session_state.messages = []
 
 @st.cache_data
+def load_data():
+    df = pd.read_csv('recipe_details.csv')
+    recommender = RecipeRecommendationSystem(df)
+    return df, recommender.get_recipe_nodes()
+df, recipe_nodes = load_data()
+
+@st.cache_data
 def get_structured_response(recipe_insights, preparation_steps):
     system_message = """You are an expert Chef who has been in the Culinary Industry for over 30 years.
                         I want you to structure the recipe insights into a well-structured paragraph(not too long) and also
@@ -151,11 +158,7 @@ def chatbot_section():
 def main():
     st.sidebar.title("Select Section")
     page = st.sidebar.radio("Choose a section:", ("Food Recommendation", "Chatbot"))
-
-    if page == "Food Recommendation":
-        food_recommendation_section()
-    elif page == "Chatbot":
-        chatbot_section()
+    food_recommendation_section() if page == "Food Recommendation" else chatbot_section()
 
 if __name__ == "__main__":
     main()
